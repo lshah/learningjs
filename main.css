@@ -1,0 +1,107 @@
+/**fonts
+font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display SC', serif;
+**/
+
+/**Main Styles**/
+
+* {
+	
+	margin: 0;
+	padding:0;
+	
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+#wrapper {
+	max-width: 940px;
+	margin-left: 50px;
+}
+
+#header {
+	margin-top: 0;
+	padding: 20px 0px;
+	background-color: gray;
+	border-bottom: solid 20px lightgray;
+}
+
+h1 {
+	font-family: 'Playfair Display SC', serif;
+	margin-top: 25px;
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	font-family: 'Playfair Display SC', serif;
+	margin: 25px 120px;
+}
+
+p {
+	margin: 25px 120px;
+	font-size: 1.2em;
+}
+
+
+
+.btn, .reset-btn {
+	width: 200px;
+	height: 35px;
+	box-shadow: 2px 2px 5px lightgray;
+	border: 1.5px solid #3333cc;
+	border-radius: 5px;
+	font-size: 1em;
+	color: white;
+}
+
+.btn {
+	margin: 5px 25px 5px 125px;
+	background-color: #3333cc;
+}
+
+.reset-btn {
+	margin: 5px 25px;
+	background-color: white;
+	color: #3333cc;
+}
+
+footer {
+	margin-top: 50px;
+	height: 50px;
+	background-color: lightgray;
+}
+
+#rectangle {
+	width: 150px;
+	height: 25px;
+	border: solid 2px black;
+	margin: 5px 25px 15px 125px;
+	background-color: white;
+}
+
+
+#selectbox {
+	margin: 5px 25px 15px 125px;
+}
+
+#dropdown {
+	margin-left: 10px;
+	width: 100px;
+	height: 25px;
+	border: solid 1px black;
+}
+
+/****Media Queries****/
+
+@media (max-width: 700px){
+	
+	
+	.btn,
+	.reset-btn {
+		margin-left: 130px;
+	}
+}
