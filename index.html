@@ -83,7 +83,6 @@
 		
 		<form id="selectbox">Select Color:
 			<select name="Select Color" id="dropdown">
-				<option value="Select Color">Select a Color</option>
 				<option value="Red">Red</option>
 				<option value="Green">Green</option>
 				<option value="Yellow">Yellow</option>
@@ -91,10 +90,11 @@
 			</select>
 		</form>
 		
-		<div id="rectangle"><p id="demo"></P></div>
+		<div id="rectangle"></div>
+		<p id="removeStoredColor"></p>
 		
-		<button type="button" class="btn" onclick="assignColor()">Assign Color</button>
-		<button type="button" class="reset-btn" onclick="deleteStorage()">Delete item from Storage</button>
+		<button type="button" id="storageButton" class="btn" onclick="assignColor()">Assign Color</button>
+		<button type="button" class="reset-btn" onclick="deleteColor()">Delete Color from Storage</button>
 		</div>
 		
 		

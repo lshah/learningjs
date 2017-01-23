@@ -98,14 +98,43 @@ function deleteStorage(){
 
 /**Program 9**/
 
+function getColorOnPageLoad(){
+	document.getElementById('rectangle').style.backgroundColor = localStorage.getItem('divColor');
+	document.getElementById('dropdown').value = localStorage.getItem('divColor');
+	
+}
+
+document.getElementById('storageButton').addEventListener('click', assignColor);
+
 function assignColor(){
-	document.getElementById('dropdown').addEventListener('change', function(){
+	
 		var divColor = document.getElementById('dropdown').value;
 		localStorage.setItem('divColor', divColor);
 		document.getElementById('rectangle').style.backgroundColor = localStorage.getItem('divColor');
-	})
+		document.getElementById('removeStoredColor').innerHTML = '';
+	
 }
 
+
+if(localStorage.getItem('divColor') !== null){
+	getColorOnPageLoad();
+}
+else {
+	assignColor();
+}
+
+function deleteColor(){
+	localStorage.getItem('divColor');
+	if(localStorage.getItem('divColor') !== null){
+		localStorage.removeItem('divColor');
+		document.getElementById('removeStoredColor').innerHTML = 'Color deleted from Local Storage';
+		document.getElementById('dropdown').value = 'Select a Color';
+		document.getElementById('rectangle').style.backgroundColor = '';
+	}
+	else {
+		document.getElementById('removeStoredColor').innerHTML = 'No Colors found in Local Storage';
+	}
+}
 
 
 
